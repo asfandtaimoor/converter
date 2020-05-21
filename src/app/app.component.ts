@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'converterAngular';
+  title = 'Unit Converter';
   public kgram:number;
+
+
+
 }

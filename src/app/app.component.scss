@@ -4,10 +4,20 @@ header {
     background-color: red;
 }
 
-.block {
-    div {
-        label {
-            font-size: 24px;
+.main-block {
+    display: flex;
+    .block {
+        flex: 1;
+    }
+    .block-1 {
+        div {
+            label {
+                font-size: 24px;
+            }
         }
+    }
+    .block-2 {
+        background-color: rgb(87, 87, 209);
+        border-radius: 15px;
     }
 }

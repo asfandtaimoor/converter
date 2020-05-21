@@ -1,19 +1,30 @@
 <!-- header-->
 
 <header>
-    <h1>Converter</h1>
+    <h1>{{title}}</h1>
 </header>
 
 
 <!-- Take input from user and convert -->
 
+<div class="main-block">
 
-<div class="block">
+    <div class="block block-1">
 
-    <div [class]="kilogram">
-        <label>Input weight in KG : </label>
-        <input type="number" [(ngModel)]="kgram">
+        <div [class]="kilogram">
+            <label>Input weight in KG : </label>
+            <input type="number" [(ngModel)]="kgram">
 
+        </div>
+        <h1>{{kgram}}</h1>
     </div>
-    <h1>{{kgram}}</h1>
+
+
+    <div class="block block-2">
+        <h1>Pounds is : {{kgram*2.20462 || ""}}</h1>
+        <h1>Grams is : {{kgram*1000 || ""}}</h1>
+        <h1>Ounces is : {{kgram*35.27 || ""}}</h1>
+        <h1>Stones is : {{kgram*0.157 || ""}}</h1>
+    </div>
+
 </div>
