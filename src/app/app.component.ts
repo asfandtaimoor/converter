@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Unit Converter';
   public kgram:number;
+  public grams:number;
+  public ounces:number;
+  public stones:number;
 
 
 

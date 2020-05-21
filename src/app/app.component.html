@@ -13,18 +13,39 @@
 
         <div [class]="kilogram">
             <label>Input weight in KG : </label>
-            <input type="number" [(ngModel)]="kgram">
+            <input type="number" [(ngModel)]="kgram" placeholder="{{grams/1000 ||ounces*(2.2046) ||stones/0.15747 }}">
 
         </div>
-        <h1>{{kgram}}</h1>
+
+        <div [class]=" Grams ">
+            <label>Input weight in grams : </label>
+            <input type="number" [(ngModel)]="grams " placeholder="{{kgram*1000 || ounces*(0.0022046) || stones*14}}">
+
+        </div>
+
+        <div [class]="Ounces">
+            <label>Input weight in Ounces : </label>
+            <input type="number" [(ngModel)]="ounces" placeholder="{{kgram*35.274||grams/1000 ||stones*(16) }}">
+
+        </div>
+
+        <div [class]="Stones">
+            <label>Input weight in Stones : </label>
+            <input type="number" [(ngModel)]="stones " placeholder="{{kgram*1000 ||ounces*(0.071429) ||grams *0.00015747 }} ">
+
+        </div>
+
+
+
+
     </div>
 
 
-    <div class="block block-2">
-        <h1>Pounds is : {{kgram*2.20462 || ""}}</h1>
-        <h1>Grams is : {{kgram*1000 || ""}}</h1>
-        <h1>Ounces is : {{kgram*35.27 || ""}}</h1>
-        <h1>Stones is : {{kgram*0.157 || ""}}</h1>
+    <div class="block block-2 ">
+        <h1>Pounds is : {{kgram*2.20462 || " "}}</h1>
+        <h1>Grams is : {{kgram*1000 || " "}}</h1>
+        <h1>Ounces is : {{kgram*35.27 || " "}}</h1>
+        <h1>Stones is : {{kgram*0.157 || " "}}</h1>
     </div>
 
 </div>
